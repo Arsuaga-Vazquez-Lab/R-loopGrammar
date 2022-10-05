@@ -1,5 +1,4 @@
 from typing import *
-from typing.io import *
 
 import dataclasses
 import enum
@@ -10,7 +9,7 @@ class ValidationError(Exception):
 
 
 @dataclasses.dataclass
-class Sequence:
+class FASTASequence:
     sequence: str
     description: Optional[str] = None
     comments: Optional[List[str]] = None
@@ -23,7 +22,7 @@ class Reader:
     def __iter__(self):
         return self
 
-    def __next__(self):
+    def __next__(self) -> FASTASequence:
         comments = []
         description = None
 
@@ -37,6 +36,6 @@ class Reader:
                     )
                 description = line[1:]
             else:
-                return Sequence(line, description, comments)
+                return FASTASequence(line, description, comments)
 
         raise StopIteration

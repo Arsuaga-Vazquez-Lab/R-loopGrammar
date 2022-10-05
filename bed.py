@@ -1,15 +1,7 @@
 from typing import *
-from typing.io import *
 
 import dataclasses
 import enum
-
-"""
-with open(...) as bed_file:
-	bed_reader = bed.Reader(bed_file)
-	for genomic_region in bed_reader:
-		...
-"""
 
 
 class StrandOrientation(enum.Enum):
