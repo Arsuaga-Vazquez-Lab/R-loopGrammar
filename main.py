@@ -20,10 +20,6 @@ if __name__ == "__main__":
         pfc53_plasmid_sequence, pfc53_training_set, gene_position=(80, 1829)
     )
 
-    print(pfc53_model.dictionary.rloop_parsing_blocks)
-
-    print(pfc53_model.region_weight_summaries)
-
     """
     pfc53_model = model.Model(ntuple_size=4, padding_size=13)
     pfc53_model.train(pfc53_sequence, pfc53_training_set)
