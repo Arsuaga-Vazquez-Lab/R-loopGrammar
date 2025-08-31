@@ -219,6 +219,7 @@ def build_model(mp: ModelParameters) -> None:
 
 parser = argparse.ArgumentParser(prog=PROGRAM_NAME, description=DESCRIPTION)
 parser.add_argument("output_folder")
+parser.add_argument('-i', '--ini_file', type=str)
 parser.add_argument("-c", "--count", type=int, default=10)
 parser.add_argument("-p", "--paddings", type=int, nargs="+", default=[13])
 parser.add_argument("-k", "--width", type=int, default=4)
@@ -235,7 +236,7 @@ def main() -> None:
     args = parser.parse_args()
     print(args)
 
-    plasmids = read_plasmids()
+    plasmids = read_plasmids(args.ini_file)
 
     window_length = args.width
     number_of_models = args.count

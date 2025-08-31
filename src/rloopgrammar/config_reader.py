@@ -11,9 +11,9 @@ class Plasmid:
     bed_file: str
 
 
-def read_plasmids():
+def read_plasmids(ini_filepath):
     config = configparser.ConfigParser()
-    config.read("plasmids.ini")
+    config.read(ini_filepath)
 
     plasmids = []
     plasmid_names = config.sections()

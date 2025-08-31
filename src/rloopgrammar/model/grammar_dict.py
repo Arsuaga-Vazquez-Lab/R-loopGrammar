@@ -3,6 +3,8 @@ import argparse
 import json
 import random
 
+from Bio import SeqIO
+
 import openpyxl
 from openpyxl import Workbook
 from openpyxl.cell import WriteOnlyCell
@@ -288,10 +290,7 @@ class GrammarDict:
     ):
         max_rloops = 1800
         res = dict()
-        with open(fasta_in, "r") as fin:
-            fin.readline()
-            gene_seq = fin.readline().strip().upper()
-
+        gene_seq = str(SeqIO.read(fasta_in, 'fasta').seq)
         gene_seq = gene_seq[start_idx:end_idx]
 
         with open(bed_in, "r") as fin:
