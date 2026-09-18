@@ -3,9 +3,10 @@ R-loops are transient three-stranded nucleic acids that form during transcriptio
 
 Here we represent an R-loop as a word in a formal grammar called the _R-loop grammar_ and predict R-loop formation. We train the R-loop grammar on experimental data obtained by single-molecule R-loop footprinting and sequencing (SMRF-seq). Despite not containing explicit topological information, the R-loop grammar accurately predicts R-loop formation on plasmids with varying starting topologies and outperforms previous methods in R-loop prediction. 
 
-<!---
-Might need a reference for the abstract.
--->
+Full details are described the following paper. Please cite our work if you use this source code, data, or findings in your own research:  
+
+*Ferrari M, Poznanović S, Riehl M, Lusk J, Hartono S, Gonzalez-Isunza G, Chedin F, Vazquez M, Jonoska N (2025). The R-loop grammar predicts R-loop formation under different topological constraints. PLOS Computational Biology, 21(8), e1013376.*
+
 
 ## Experimental data set:
 [Fasta & BED files](https://github.com/Arsuaga-Vazquez-Lab/R-loopGrammar/releases/download/v0.0.1-alpha/fasta_bed.zip)
