@@ -176,7 +176,7 @@ make all
 
 1. Stolz R, Sulthana S, Hartono SR, Malig M, Benham CJ, Chedin F. Interplay between DNA sequence and negative superhelicity drives R-loop structures. Proc Natl Acad Sci U S A. 2019 Mar 26;116(13):6260-6269. doi: 10.1073/pnas.1819476116. Epub 2019 Mar 8. PMID: 30850542; PMCID: PMC6442632.
 2. Jonoska N, Obatake N, Poznanovik S, Price C, Riehl M, Vazquez M. (2021). Modeling RNA:DNA Hybrids with Formal Grammars. 10.1007/978-3-030-57129-0_3.
-3. Ferrari M, Poznanovik S, Riehl M, Lusk J, Hartono S, Gonzalez G, Chedin F, Vazquez M, Jonoska N. (Submitted). The R-loop Grammar predicts R-loop formation under different topological constraints.
+3. Ferrari M, Poznanović S, Riehl M, Lusk J, Hartono S, Gonzalez-Isunza G, Chedin F, Vazquez M, Jonoska N (2025). The R-loop grammar predicts R-loop formation under different topological constraints. PLOS Computational Biology, 21(8), e1013376.
 
 ## Acknowledgements
 
